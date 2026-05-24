@@ -19,7 +19,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     border-bottom: 1px solid rgba(70, 163, 88, 0.50);
 }
 .menu{
