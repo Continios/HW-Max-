@@ -54,19 +54,19 @@
 
 .hero {
     background-color: #F5F5F5;
-    padding: 6% 4%;
+    padding: 68px 40px;
 }
 
 .heroText {
     display: inline-block;
     vertical-align: middle;
-    width: 54%;
+    width: 557px;
 }
 
 .heroImage {
     display: inline-block;
     vertical-align: middle;
-    width: 45%;
+    width: 500px;
     text-align: right;
 }
 
@@ -98,7 +98,7 @@
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    width: 80%;
+    width: 557px;
     margin-bottom: 44px;
 }
 
