@@ -54,13 +54,13 @@
 
 .hero {
     background-color: #F5F5F5;
-    padding: 68px 40px;
 }
 
 .heroText {
     display: inline-block;
     vertical-align: middle;
     width: 557px;
+    padding: 68px 40px
 }
 
 .heroImage {
@@ -75,6 +75,7 @@
 }
 
 .heroSubtitle {
+    margin-top: 0 ;
     color: #3D3D3D;
     font-family: "CeraPro Medium", sans-serif;
     font-size: 14px;
