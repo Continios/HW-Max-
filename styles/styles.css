@@ -40,17 +40,22 @@
     font-family: 'CeraPro Bold', sans-serif;
     border-color: #46a358;
 }
-.hederBtn{
-    background: #46a358;
+.hederBtn {
+    background: #46A358;
     color: #fff;
     border-radius: 6px;
     display: flex;
     align-items: center;
-    gap:4px;
+    gap: 4px;
     padding: 8px 17px;
     text-decoration: none;
-    
+
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
 }
+    
 
 .hero {
     background-color: #F5F5F5;
