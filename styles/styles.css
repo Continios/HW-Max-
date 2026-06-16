@@ -296,3 +296,146 @@ body {
     color: #ffffff;
     font-family: "CeraPro Bold", sans-serif;
 }
+
+/* HW6 */
+
+.heroPlantSmall {
+    width: 135px;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.promoSection {
+    display: flex;
+    gap: 28px;
+    margin-top: 100px;
+}
+
+.promoCard {
+    flex: 1;
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 250px;
+}
+
+.promoImage {
+    width: 260px;
+    object-fit: contain;
+}
+
+.promoText {
+    text-align: right;
+}
+
+.promoTitle {
+    margin: 0 0 9px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.promoDescription {
+    margin: 0 0 25px;
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 300px;
+}
+
+.promoBtn {
+    display: inline-block;
+    background-color: #46A358;
+    color: #ffffff;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 10px 28px;
+    border-radius: 6px;
+}
+
+.blogSection {
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.blogHeader {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.blogTitle {
+    margin: 0 0 15px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.blogSubtitle {
+    margin: 0;
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.blogGrid {
+    display: flex;
+    gap: 44px;
+}
+
+.blogCard {
+    flex: 1;
+    background-color: #FBFBFB;
+}
+
+.blogImage {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    display: block;
+}
+
+.blogContent {
+    padding: 9px 13px 12px;
+}
+
+.blogMeta {
+    margin: 0 0 4px;
+    color: #46A358;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.blogCardTitle {
+    margin: 0 0 4px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.blogText {
+    margin: 0 0 9px;
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.blogLink {
+    color: #3D3D3D;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
