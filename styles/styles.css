@@ -227,6 +227,15 @@ body {
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
     line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sortingIcon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 .productsGrid {
@@ -242,7 +251,6 @@ body {
 
 .productImageBox {
     background-color: #FBFBFB;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
