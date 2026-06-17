@@ -121,7 +121,7 @@ body {
 
 .heroDescription {
     width: 80%;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
     color: #727272;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
@@ -140,6 +140,8 @@ body {
     border-radius: 6px;
     margin-top: 40px;
 }
+
+/* PRODUCTS SECTION */
 
 .shopSection {
     display: flex;
@@ -242,6 +244,7 @@ body {
 
 .productCard {
     flex: 0 0 calc((100% - 66px) / 3);
+    position: relative;
 }
 
 .productImageBox {
@@ -252,12 +255,61 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    position: relative;
+    border-top: 1px solid transparent;
+    overflow: hidden;
+}
+
+.productCard:hover .productImageBox {
+    border-top-color: #46A358;
 }
 
 .productImageBox img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.productActions {
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.productCard:hover .productActions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.productAction {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 18px;
+}
+
+.saleBadge {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    background-color: #46A358;
+    color: #ffffff;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 7px 9px;
+    z-index: 2;
 }
 
 .productName {
@@ -275,6 +327,15 @@ body {
     font-family: "CeraPro Bold", sans-serif;
     font-size: 18px;
     line-height: 16px;
+}
+
+.oldPrice {
+    color: #A5A5A5;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: line-through;
+    margin-left: 16px;
 }
 
 .pagination {
@@ -309,31 +370,42 @@ body {
     transform: rotate(-90deg);
 }
 
-/* HW6 */
+/* PROMO SECTION */
 
 .promoSection {
     display: flex;
     gap: 28px;
     margin-top: 100px;
+    overflow: visible;
 }
 
 .promoCard {
     flex: 1;
+    min-height: 250px;
     background-color: #FBFBFB;
+    position: relative;
+    overflow: visible;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    min-height: 250px;
+    justify-content: flex-end;
+    padding: 37px 30px 37px 250px;
 }
 
 .promoImage {
-    width: 260px;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 290px;
+    max-height: 290px;
     object-fit: contain;
+    z-index: 1;
 }
 
 .promoText {
+    max-width: 300px;
     text-align: right;
+    position: relative;
+    z-index: 2;
 }
 
 .promoTitle {
@@ -350,7 +422,6 @@ body {
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    max-width: 300px;
 }
 
 .promoBtn {
@@ -364,6 +435,8 @@ body {
     padding: 10px 28px;
     border-radius: 6px;
 }
+
+/* BLOG SECTION */
 
 .blogSection {
     margin-top: 130px;
@@ -399,13 +472,17 @@ body {
 .blogCard {
     flex: 1;
     background-color: #FBFBFB;
+    position: relative;
+    padding-top: 195px;
 }
 
 .blogImage {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 195px;
     object-fit: cover;
-    display: block;
 }
 
 .blogContent {
