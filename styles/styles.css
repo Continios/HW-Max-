@@ -309,31 +309,38 @@ body {
     transform: rotate(-90deg);
 }
 
-/* HW6 */
-
 .promoSection {
     display: flex;
     gap: 28px;
     margin-top: 100px;
+    overflow: visible;
 }
 
 .promoCard {
     flex: 1;
+    min-height: 250px;
     background-color: #FBFBFB;
+    position: relative;
+    overflow: visible;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    min-height: 250px;
+    justify-content: flex-end;
+    padding: 37px 30px 37px 270px;
 }
 
 .promoImage {
-    width: 260px;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 300px;
+    max-height: 300px;
     object-fit: contain;
 }
 
 .promoText {
+    max-width: 300px;
     text-align: right;
+    position: relative;
 }
 
 .promoTitle {
@@ -350,7 +357,6 @@ body {
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    max-width: 300px;
 }
 
 .promoBtn {
@@ -364,6 +370,8 @@ body {
     padding: 10px 28px;
     border-radius: 6px;
 }
+
+/* BLOG SECTION */
 
 .blogSection {
     margin-top: 130px;
@@ -398,7 +406,7 @@ body {
 
 .blogCard {
     flex: 1;
-    background-color: #FBFBFB;
+    position: relative;
 }
 
 .blogImage {
@@ -409,6 +417,7 @@ body {
 }
 
 .blogContent {
+    background-color: #FBFBFB;
     padding: 9px 13px 12px;
 }
 
