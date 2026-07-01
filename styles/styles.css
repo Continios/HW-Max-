@@ -141,7 +141,7 @@ body {
     margin-top: 40px;
 }
 
-/* PRODUCTS SECTION */
+
 
 .shopSection {
     display: flex;
@@ -369,8 +369,6 @@ body {
 .paginationNext svg {
     transform: rotate(-90deg);
 }
-
-/* PROMO SECTION */
 
 .promoSection {
     display: flex;
