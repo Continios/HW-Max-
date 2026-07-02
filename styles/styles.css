@@ -597,3 +597,36 @@ body {
 .dropdownItemHasSubmenu:hover > .dropdownLink .dropdownArrow {
     transform: rotate(90deg);
 }
+.productImageBox {
+    position: relative;
+}
+
+.productActions {
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+}
+
+.productCard:hover .productActions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.productAction {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 18px;
+}
